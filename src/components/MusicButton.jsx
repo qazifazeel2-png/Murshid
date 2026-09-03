@@ -6,7 +6,7 @@ export default function MusicButton() {
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    const audio = new Audio("/music/birthday.mp3");
+    const audio = new Audio("/music/song.mpeg");
     audio.loop = true;
     audio.volume = 0.5;
     audioRef.current = audio;

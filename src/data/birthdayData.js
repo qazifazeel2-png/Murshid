@@ -3,7 +3,7 @@
 // ============================================================
 
 // Her name — shown throughout the site
-export const herName = "Ammarah";
+export const herName = "Murshid (Amna Rasheed)";
 
 // -------------------------------------------------------------
 // PHOTOS
@@ -13,9 +13,10 @@ export const herName = "Ammarah";
 // to a soft gradient placeholder so nothing ever looks broken.
 // -------------------------------------------------------------
 export const photos = {
-  screen1: "/images/ammara1.jpg",
-  screen2: ["/images/ammara2.jpg", "/images/ammara3.jpg"],
-  screen3: ["/images/ammara4.jpg", "/images/ammara5.jpg", "/images/ammara6.jpg"],
+  screen1: "/images/a 1.jpeg",
+  screen2: ["/images/a 1.jpeg", "/images/a 3.jpeg"],
+  screen3: ["/images/a 4.jpeg", "/images/a 5.jpeg", "/images/a 6.jpeg"],
+  screen4: ["/images/a 1.jpeg", "/images/a 2.jpeg", "/images/a 3.jpeg","/images/a 4.jpeg", "/images/a 5.jpeg", "/images/a 6.jpeg" ,"/images/a 7.jpeg"]
 };
 
 // -------------------------------------------------------------
@@ -44,7 +45,7 @@ export const screen2Content = {
 export const screen3Content = {
   title: "Why You Are So Special",
   messages: [
-    "You are not just a friend...",
+    "You are not just a Sister...",
     "You are one of the reasons behind many of my happiest moments.",
     "Your presence makes ordinary moments feel special.",
     "And your smile can make a difficult day better.",
@@ -52,4 +53,14 @@ export const screen3Content = {
   closingLines: ["Some people become memories...", "But some people become a beautiful part of your life."],
   finalLine: `You are one of those people, ${herName}. ❤️`,
   cta: "There is more... ✨",
+};
+
+// -------------------------------------------------------------
+// SCREEN 4 — SPECIAL MEMORIES
+// -------------------------------------------------------------
+export const screen4Content = {
+  title: "A Special Place in My Heart",
+  dua: "May your days always be filled with happiness and light.",
+  specialMessage: `Every memory with you is precious, ${herName}.`,
+  cta: "Start Again ❤️",
 };

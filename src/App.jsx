@@ -3,10 +3,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import Screen1 from "./components/Screen1.jsx";
 import Screen2 from "./components/Screen2.jsx";
 import Screen3 from "./components/Screen3.jsx";
+import Screen4 from "./components/Screen4.jsx";
 import ProgressIndicator from "./components/ProgressIndicator.jsx";
 import MusicButton from "./components/MusicButton.jsx";
 
-const TOTAL_SCREENS = 3;
+const TOTAL_SCREENS = 4;
 
 const pageVariants = {
   initial: { opacity: 0, scale: 1.02 },
@@ -23,6 +24,7 @@ export default function App() {
     1: <Screen1 onNext={goNext} />,
     2: <Screen2 onNext={goNext} />,
     3: <Screen3 onNext={goNext} />,
+    4: <Screen4 onNext={goNext} />,
   };
 
   return (

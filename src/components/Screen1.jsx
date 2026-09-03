@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import Particles from "./Particles.jsx";
+import Confetti from "./Confetti.jsx";
 import { photos, screen1Content } from "../data/birthdayData.js";
 
 function useLiveClock() {
@@ -25,6 +26,15 @@ export default function Screen1({ onNext }) {
   const time = useLiveClock();
   const { hours, minutes, period } = formatTime(time);
   const [imgFailed, setImgFailed] = useState(false);
+  const [countdown, setCountdown] = useState(10);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCountdown((value) => (value > 0 ? value - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <div className="relative w-full h-[100dvh] overflow-hidden bg-ink">
@@ -48,6 +58,7 @@ export default function Screen1({ onNext }) {
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
 
       <Particles count={26} />
+      <Confetti pieces={100} active={countdown === 0} cannon />
 
       {/* Soft central glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full bg-gold/10 blur-[100px]" />
@@ -92,6 +103,27 @@ export default function Screen1({ onNext }) {
         >
           {screen1Content.subtext}
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.7 }}
+          className="mt-7 flex flex-col items-center gap-1 text-gold/80"
+        >
+          <span className="font-body text-[10px] uppercase tracking-[0.3em]">The surprise begins in</span>
+          <span className="font-display text-4xl text-ivory tabular-nums text-shadow-glow">{countdown}</span>
+        </motion.div>
+
+        {countdown === 0 && (
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.8, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-3 font-display text-3xl sm:text-4xl font-semibold text-gold text-shadow-glow"
+          >
+            Happy Birthday Murshid
+          </motion.h1>
+        )}
 
         <motion.button
           initial={{ opacity: 0, y: 16 }}
