@@ -1,4 +1,4 @@
-# For Ammarah ✨ — A Birthday Surprise
+# For Murshid ✨ — A Birthday Surprise
 
 A cinematic, emotional, 3-screen birthday website built for Ammarah.
 
@@ -108,7 +108,7 @@ ammarah-birthday/
 │   ├── main.jsx
 │   └── index.css
 ├── public/
-│   ├── images/                   # Put Ammarah's photos here
+│   ├── images/                   # Put Murshid's photos here
 │   └── music/                    # Put birthday.mp3 here
 ├── index.html
 ├── tailwind.config.js
