@@ -1,6 +1,6 @@
 # For Murshid ✨ — A Birthday Surprise
 
-A cinematic, emotional, 3-screen birthday website built for Ammarah.
+A cinematic, emotional, 3-screen birthday website built for Murshid.
 
 This is the first **3 of the planned 6 screens**:
 
@@ -35,7 +35,7 @@ Netlify, GitHub Pages, etc.).
 
 ---
 
-## 2. Add Ammarah's photos
+## 2. Add Murshid's photos
 
 Put her photos in `public/images/` using these filenames:
 
@@ -73,7 +73,7 @@ string there and it updates everywhere it's used.
 Her name is set once, at the top of that file:
 
 ```js
-export const herName = "Ammarah";
+export const herName = "Murshid";
 ```
 
 ---

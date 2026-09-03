@@ -5,11 +5,11 @@ import { Heart } from "lucide-react";
 /**
  * A photo frame that quietly falls back to a soft gradient + icon
  * if the image hasn't been added yet — so the site never looks broken
- * while you're still collecting Ammarah's photos.
+ * while you're still collecting Murshid's photos.
  */
 export default function PhotoCard({
   src,
-  alt = "Ammarah",
+  alt = "Murshid",
   className = "",
   rounded = "rounded-2xl",
   rotate = 0,

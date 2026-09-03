@@ -2,8 +2,8 @@
 // EVERYTHING YOU'D WANT TO EDIT LIVES IN THIS ONE FILE
 // ============================================================
 
-// Her name — shown throughout the site
-export const herName = "Murshid (Amna Rasheed)";
+// Name shown throughout the site
+export const herName = "Murshid";
 
 // -------------------------------------------------------------
 // PHOTOS

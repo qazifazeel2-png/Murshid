@@ -43,7 +43,7 @@ export default function Screen1({ onNext }) {
         {!imgFailed ? (
           <img
             src={photos.screen1}
-            alt="Ammarah"
+            alt="Murshid"
             onError={() => setImgFailed(true)}
             className="w-full h-full object-cover"
             draggable={false}
